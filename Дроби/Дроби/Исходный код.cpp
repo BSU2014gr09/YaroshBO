@@ -1,3 +1,5 @@
+// TODO
+// –ù–µ—Ç –≥–ª–∞–≤–Ω–æ–≥–æ - —Ñ—É–Ω–∫—Ü–∏–π, –∫–æ—Ç–æ—Ä—ã–µ —Ä–∞–±–æ—Ç–∞—é—Ç —Å –≤–∞—à–µ–π —Å—Ç—Ä—É–∫—Ç—É—Ä–æ–π!!!! –ù–∞–≤–¥–æ –º–∏–Ω–∏–º—É–º 5 —Ç–∞–∫–∏—Ö –æ–ø–µ—Ä–∞—Ü–∏–π –∫–∞–∫ –≤–≤–æ–¥/–≤—ã–≤–æ–¥/—Å–ª–æ–∂–µ–Ω–∏–µ/–≤—ã—á–∏—Ç–∞–Ω–∏–µ/—É–º–Ω–æ–∂–µ–Ω–∏–µ –¥—Ä–æ–±–µ–π –∏ —Ç.–¥.
 #include <iostream>
 #include <cstring>
 using namespace std;
@@ -23,10 +25,10 @@ int main ()
 	int m, n;
 	
 	fraction drob1, drob2, difference,sum,product,quotient;
-	cout<<"¬‚Â‰ËÚÂ ˜ËÒÎËÚÂÎ¸ ÔÂ‚ÓÈ ‰Ó·Ë:";cin>>drob1.num;
-	cout<<"¬‚Â‰ËÚÂ ÁÌ‡ÏÂÌ‡ÚÂÎ¸ ÔÂ‚ÓÈ ‰Ó·Ë:";cin>>drob1.denom;
-	cout<<"¬‚Â‰ËÚÂ ˜ËÒÎËÚÂÎ¸ ‚ÚÓÓÈ ‰Ó·Ë:";cin>>drob2.num;
-	cout<<"¬‚Â‰ËÚÂ ÁÌ‡ÏÂÌ‡ÚÂÎ¸ ‚ÚÓÓÈ ‰Ó·Ë:";cin>>drob2.denom;
+	cout<<"√Ç√¢√•√§√®√≤√• √∑√®√±√´√®√≤√•√´√º √Ø√•√∞√¢√Æ√© √§√∞√Æ√°√®:";cin>>drob1.num;
+	cout<<"√Ç√¢√•√§√®√≤√• √ß√≠√†√¨√•√≠√†√≤√•√´√º √Ø√•√∞√¢√Æ√© √§√∞√Æ√°√®:";cin>>drob1.denom;
+	cout<<"√Ç√¢√•√§√®√≤√• √∑√®√±√´√®√≤√•√´√º √¢√≤√Æ√∞√Æ√© √§√∞√Æ√°√®:";cin>>drob2.num;
+	cout<<"√Ç√¢√•√§√®√≤√• √ß√≠√†√¨√•√≠√†√≤√•√´√º √¢√≤√Æ√∞√Æ√© √§√∞√Æ√°√®:";cin>>drob2.denom;
 		sum.denom = drob1.denom*drob2.denom;
 		sum.num=drob1.num*drob2.denom+drob2.num*drob1.denom;
 		difference.num=drob1.num*drob2.denom-drob2.num*drob1.denom;
@@ -34,10 +36,10 @@ int main ()
 		product.denom=drob1.denom*drob2.denom;
 		quotient.num=drob1.num/drob2.num;
 		quotient.denom=drob1.denom/drob2.denom;
-		cout<<"0 - ÔÓÒ˜ËÚ‡Ú¸ ‡ÁÌÓÒÚ¸"<<endl<<"1- Ì‡ÈÚË ÒÛÏÏÛ"<<endl<<"2-ÔÂÂÏÌÓÊËÚ¸ ‰Ó·Ë"<<endl<<"3-ÔÓ‰ÂÎËÚ¸ ‰Ó·Ë"<<endl;cin>>m;
+		cout<<"0 - √Ø√Æ√±√∑√®√≤√†√≤√º √∞√†√ß√≠√Æ√±√≤√º"<<endl<<"1- √≠√†√©√≤√® √±√≥√¨√¨√≥"<<endl<<"2-√Ø√•√∞√•√¨√≠√Æ√¶√®√≤√º √§√∞√Æ√°√®"<<endl<<"3-√Ø√Æ√§√•√´√®√≤√º √§√∞√Æ√°√®"<<endl;cin>>m;
 		switch(m)
 		{case 0:cout<<difference.num<<"/"<<sum.denom<<endl;
-		cout<<"0-ÒÓÍ‡ÚËÚ¸ ‰Ó·¸"<<endl<<"1-ÌÂ ÒÓÍ‡˘‡Ú¸"<<endl;cin>>n;
+		cout<<"0-√±√Æ√™√∞√†√≤√®√≤√º √§√∞√Æ√°√º"<<endl<<"1-√≠√• √±√Æ√™√∞√†√π√†√≤√º"<<endl;cin>>n;
 			switch(n)
 			{case 0:reduction(difference.num,sum.denom);cout<<difference.num<<"/"<<sum.denom;
 			break;
@@ -45,7 +47,7 @@ int main ()
 			}
 			break;
 		case 1:cout<<sum.num<<"/"<<sum.denom<<endl;
-			cout<<"0-ÒÓÍ‡ÚËÚ¸ ‰Ó·¸"<<endl<<"1-ÌÂ ÒÓÍ‡˘‡Ú¸"<<endl;cin>>n;
+			cout<<"0-√±√Æ√™√∞√†√≤√®√≤√º √§√∞√Æ√°√º"<<endl<<"1-√≠√• √±√Æ√™√∞√†√π√†√≤√º"<<endl;cin>>n;
 			switch(n)
 			{case 0:reduction(sum.num,sum.denom);cout<<sum.num<<"/"<<sum.denom;
 			break;
@@ -53,7 +55,7 @@ int main ()
 			}
 			break;
 		case 2:cout<<product.num<<"/"<<product.denom<<endl;
-			cout<<"0-ÒÓÍ‡ÚËÚ¸ ‰Ó·¸"<<endl<<"1-ÌÂ ÒÓÍ‡˘‡Ú¸"<<endl;cin>>n;
+			cout<<"0-√±√Æ√™√∞√†√≤√®√≤√º √§√∞√Æ√°√º"<<endl<<"1-√≠√• √±√Æ√™√∞√†√π√†√≤√º"<<endl;cin>>n;
 			switch(n)
 			{case 0:reduction(product.num,product.denom);cout<<product.num<<"/"<<product.denom;
 			break;
@@ -61,7 +63,7 @@ int main ()
 			}	
 			break;
 		case 3:cout<<quotient.num<<"/"<<quotient.denom<<endl;
-			cout<<"0-ÒÓÍ‡ÚËÚ¸ ‰Ó·¸"<<endl<<"1-ÌÂ ÒÓÍ‡˘‡Ú¸"<<endl;cin>>n;
+			cout<<"0-√±√Æ√™√∞√†√≤√®√≤√º √§√∞√Æ√°√º"<<endl<<"1-√≠√• √±√Æ√™√∞√†√π√†√≤√º"<<endl;cin>>n;
 			switch(n)
 			{case 0:reduction(quotient.num,quotient.denom);cout<<quotient.num<<"/"<<quotient.denom;
 			break;
